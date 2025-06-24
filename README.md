@@ -1,62 +1,95 @@
-🛡️ OxyCrypt Pro - AES-256 File Encryption Tool
-OxyCrypt Pro is a secure desktop application for encrypting and decrypting files using AES-256 encryption. Built with Python and Tkinter, it features a modern dark-themed interface and military-grade encryption to protect your sensitive data.
+# 🛡️ OxyCrypt Pro - AES-256 File Encryption Tool
 
-🚀 Features
-AES-256 Encryption
-Industry-standard encryption algorithm for strong file security.
+**OxyCrypt Pro** is a secure desktop application for encrypting and decrypting files using **AES-256 encryption**. Built with Python and Tkinter, it features a modern dark-themed interface and military-grade encryption to protect your sensitive data.
 
-File Protection
-Secure documents, images, videos, and archive files.
+---
 
-Modern UI
-Dark-themed, user-friendly interface with intuitive controls.
+## 🚀 Features
 
-Password Security
-Uses PBKDF2HMAC with 600,000 iterations for robust key derivation.
+- **AES-256 Encryption**  
+  Industry-standard encryption algorithm for strong file security.
 
-Flexible File Handling
+- **File Protection**  
+  Secure documents, images, videos, and archive files.
 
-Option to overwrite original files
+- **Modern UI**  
+  Dark-themed, user-friendly interface with intuitive controls.
 
-Or create encrypted/decrypted copies
+- **Password Security**  
+  Uses `PBKDF2HMAC` with **600,000 iterations** for robust key derivation.
 
-Encrypted files saved with .enc extension
+- **Flexible File Handling**
+  - Option to **overwrite original files**
+  - Or create **encrypted/decrypted copies**
+  - Encrypted files saved with `.enc` extension
 
-Progress Tracking
-Real-time visual progress bar and operation timer.
+- **Progress Tracking**  
+  Real-time visual progress bar and operation timer.
 
-Responsive Design
-Clean layout that adjusts to different screen sizes.
+- **Responsive Design**  
+  Clean layout that adjusts to different screen sizes.
 
-📝 How to Use
-1. Select a File
-Click "Browse Files" to choose any file.
+---
 
-Selected files display their name and size.
+## 📦 Requirements
 
-2. Set Password
-Enter a strong password in the field.
+- **Python 3.7+**
+- Install required package:
 
-Toggle visibility with the "Show Password" checkbox.
+```bash
+pip install cryptography
+```
 
-3. Choose Options
-Enable "Overwrite original file" to replace it.
+---
 
-Or leave disabled to create new encrypted copies.
+## 📝 How to Use
 
-4. Encrypt/Decrypt
-Click "Encrypt File" to generate a .enc file.
+### 1. Select a File
+- Click **"Browse Files"** to choose any file.
+- Selected files display their **name and size**.
 
-Click "Decrypt File" to restore the original.
+### 2. Set Password
+- Enter a **strong password** in the field.
+- Toggle visibility with the **"Show Password"** checkbox.
 
-Progress bar and operation duration are shown.
+### 3. Choose Options
+- Enable **"Overwrite original file"** to replace it.
+- Or leave disabled to create **new encrypted copies**.
 
-🔐 Security Best Practices
-Always use strong, unique passwords.
+### 4. Encrypt/Decrypt
+- Click **"Encrypt File"** to generate a `.enc` file.
+- Click **"Decrypt File"** to restore the original.
+- Progress bar and operation duration are shown.
 
-Passwords cannot be recovered – store them securely.
+---
 
-Back up important files before overwriting them.
+## 🔐 Security Best Practices
+
+- Always use **strong, unique passwords**.
+- **Passwords cannot be recovered** – store them securely.
+- **Back up important files** before overwriting them.
+
+---
+
+## ⚙️ Technical Details
+
+- **Encryption Algorithm**: AES-256 in CBC mode with PKCS7 padding  
+- **Key Derivation**: PBKDF2HMAC-SHA256 with 600,000 iterations  
+- **File Structure**:
+  ```
+  [16-byte salt] + [AES-encrypted payload]
+  ```
+- **Supported Files**: All types (documents, media, archives, etc.)
+
+---
+
+## 🛡️ Security Notes
+
+- **Passwords are never stored or transmitted**.
+- Overwritten files are **securely deleted**.
+- Always **verify decrypted files** after restoration.
+- **Not recommended** for highly sensitive military/government applications.
+
 
 
 ![Fox Logo](https://i.postimg.cc/tTmS4qhF/Screenshot-2025-06-24-190356.png)
