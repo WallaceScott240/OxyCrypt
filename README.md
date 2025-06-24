@@ -1,85 +1,62 @@
-OxyCrypt Pro - AES-256 File Encryption Tool
+🛡️ OxyCrypt Pro - AES-256 File Encryption Tool
 OxyCrypt Pro is a secure desktop application for encrypting and decrypting files using AES-256 encryption. Built with Python and Tkinter, it features a modern dark-themed interface and military-grade encryption to protect your sensitive data.
 
-Features
-AES-256 Encryption: Industry-standard encryption algorithm
+🚀 Features
+AES-256 Encryption
+Industry-standard encryption algorithm for strong file security.
 
-File Protection: Secure documents, images, media files, and archives
+File Protection
+Secure documents, images, videos, and archive files.
 
-Modern UI: Dark-themed interface with intuitive controls
+Modern UI
+Dark-themed, user-friendly interface with intuitive controls.
 
-Password Security: PBKDF2HMAC key derivation with 600,000 iterations
+Password Security
+Uses PBKDF2HMAC with 600,000 iterations for robust key derivation.
 
-File Handling:
+Flexible File Handling
 
-Overwrite original files or create encrypted copies
+Option to overwrite original files
 
-Preserve file types with .enc extension for encrypted files
+Or create encrypted/decrypted copies
 
-Progress Tracking: Visual progress bar and operation timing
+Encrypted files saved with .enc extension
 
-Responsive Design: Clean layout that adapts to different screen sizes
+Progress Tracking
+Real-time visual progress bar and operation timer.
 
-Requirements
-Python 3.7+
+Responsive Design
+Clean layout that adjusts to different screen sizes.
 
-Required packages:
-pip install cryptography
+📝 How to Use
+1. Select a File
+Click "Browse Files" to choose any file.
 
-How to Use
-Select a File:
+Selected files display their name and size.
 
-Click "Browse Files" and choose any file type
+2. Set Password
+Enter a strong password in the field.
 
-Selected files appear with their name and size
+Toggle visibility with the "Show Password" checkbox.
 
-Set Password:
+3. Choose Options
+Enable "Overwrite original file" to replace it.
 
-Enter a strong password in the security field
+Or leave disabled to create new encrypted copies.
 
-Toggle visibility with "Show Password" checkbox
+4. Encrypt/Decrypt
+Click "Encrypt File" to generate a .enc file.
 
-Choose Options:
+Click "Decrypt File" to restore the original.
 
-Enable "Overwrite original file" to replace files
+Progress bar and operation duration are shown.
 
-Leave disabled to create new encrypted/decrypted copies
+🔐 Security Best Practices
+Always use strong, unique passwords.
 
-Encrypt/Decrypt:
+Passwords cannot be recovered – store them securely.
 
-Click "Encrypt File" to create a protected .enc file
+Back up important files before overwriting them.
 
-Click "Decrypt File" to restore original files
-
-Progress bar shows operation status
-
-Operation time displays after completion
-
-Security Best Practices:
-
-Use strong, unique passwords
-
-Remember passwords - they cannot be recovered
-
-Back up important files before overwriting
-
-Technical Details
-Encryption: AES-256 in CBC mode with PKCS7 padding
-
-Key Derivation: PBKDF2HMAC-SHA256 with 600,000 iterations
-
-File Structure:
-[16-byte salt] + [Fernet encrypted payload]
-Supported Files: All file types (documents, images, media, archives)
-
-
-Security Notes
-Passwords are never stored or transmitted
-
-Original files are securely deleted when overwriting
-
-Always verify decrypted files match originals
-
-Not recommended for highly sensitive government/military use
 
 ![Fox Logo](https://i.postimg.cc/tTmS4qhF/Screenshot-2025-06-24-190356.png)
