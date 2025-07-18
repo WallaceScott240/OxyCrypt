@@ -1,3 +1,11 @@
+Company: Codtech IT Solutions
+Name: Wallace Scott Constancio Dsouza
+Intern ID: CTO8DF1236
+Domain: CS and EH
+Duration: 8 weeks
+Mentor: Neela Santosh
+Ouytput below ->
+ 
 # 🛡️ OxyCrypt Pro - AES-256 File Encryption Tool
 
 **OxyCrypt Pro** is a secure desktop application for encrypting and decrypting files using **AES-256 encryption**. Built with Python and Tkinter, it features a modern dark-themed interface and military-grade encryption to protect your sensitive data.
